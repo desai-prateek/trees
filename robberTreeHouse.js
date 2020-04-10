@@ -11,7 +11,8 @@ var robHelper = function(root) {
     let rightRobbedMoney = robHelper(root.right);
     
     let maxMoneyIfRootRobbed = root.val + leftRobbedMoney[1] + rightRobbedMoney[1];
-    let maxMoneyIfRootNotRobbed = Math.max(leftRobbedMoney[0], leftRobbedMoney[1]) +                        Math.max(rightRobbedMoney[0], rightRobbedMoney[1]);
+    let maxMoneyIfRootNotRobbed = Math.max(leftRobbedMoney[0], leftRobbedMoney[1]) + 
+        Math.max(rightRobbedMoney[0], rightRobbedMoney[1]);
         
         return [maxMoneyIfRootRobbed, maxMoneyIfRootNotRobbed];
 }
